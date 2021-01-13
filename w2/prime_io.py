@@ -4,10 +4,10 @@ val1 = int(input())
 print("Now enter another number")
 val2 = int(input())
 
-for i in range(val1, val2 + 1):     # here I setup the code
-    if i > 1:                       # this sets the loop to start if the first number is geater than 1
-        for num in range(2, i):     # this for loop sets up the iteration to start from 2 up through the range of the first for loop
-            if i % num == 0:        # this if statement tests if the division has a remainder equal to 0. if it does then the code stops and starts the loop again.
+for i in range(val1, val2 + 1):     # here I setup the range by using the 2 numbers received from the user
+    if i > 1:                       # this sets the loop to start with a variable greater than 1
+        for num in range(2, i):     # this for loop checks all integers within the specified range
+            if i % num == 0:        # and the if statement tests if the division has a remainder equal to 0. If it does not then the break is executed. If there is a remainder then the number is not a prime and the loop stops.
                 break
         else:                       # when the loop no longer is true for any iteration with a division of equal 0 it will print the intergers.
             print(i)
