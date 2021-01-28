@@ -18,4 +18,4 @@ else:
                 print(i)
 
 finally:
-    print('Here are the prime numbers between ' + str(val1) + " & " + str(val2))
+    print('Done...')
